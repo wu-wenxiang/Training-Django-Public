@@ -98,4 +98,4 @@
 		    ├── models.py
 		    ├── tests.py
 		    └── views.py	    
-- 将helloworld中的hello方法移动到views.py中
+- 将helloworld中的hello方法移动到views.py中，[源码](https://github.com/wu-wenxiang/Training-Django-Public/tree/master/01-Get-Started/02-First-View)
