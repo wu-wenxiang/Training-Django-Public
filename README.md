@@ -1,1 +1,2 @@
-# Training-Django-Public
+- [Step 01：Get Started](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/01-Get-Started)
+- [Step 02: ]()
