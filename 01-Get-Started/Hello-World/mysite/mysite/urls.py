@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.http.response import HttpResponse
+
+def hello(request):
+    return HttpResponse('Hello World')
 
 urlpatterns = [
+    url(r'^hello/', hello),
     url(r'^admin/', admin.site.urls),
 ]
