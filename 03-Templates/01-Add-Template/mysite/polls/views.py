@@ -10,8 +10,7 @@ def index(request):
 
 def current_datetime(request):
     now = datetime.datetime.now()
-    html = "<html><body>It is now %s.</body></html>" % now
-    return HttpResponse(html)
+    return render(request, 'time.html', {'current_date': now})
 
 def hours_ahead(request, offset):
     try:
