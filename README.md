@@ -1,3 +1,5 @@
+2018/06，基于Python 1.11.13 TLS
+
 ## Steps
 - [Step 01: Get Started](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/01-Get-Started)
 - [Step 02: Dynamic Urls](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/02-Dynamic-Urls)
