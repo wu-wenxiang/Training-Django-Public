@@ -98,3 +98,65 @@
 1. 运行`python manage.py makemigrations <app>`，创建一个migration版本
 1. 运行`python manage.py sqlmigrate <app> <version>`，查看该migration版本变更对应的SQL语句是什么。
 1. 运行`python manage.py migrate`，将各个migrations应用到DB
+
+## Django Shell
+
+	$ python manage.py shell
+	
+	>>> import django
+	>>> django.setup()
+	>>> from polls.models import Question, Choice 
+	>>> Question.objects.all()
+	<QuerySet []>
+	
+	>>> from django.utils import timezone
+	>>> q = Question(question_text="What's new?", pub_date=timezone.now())
+	>>> q.save()
+	>>> Question.objects.all()
+	<QuerySet [<Question: Question object>]>
+	>>> [q for q in Question.objects.all()]
+	[<Question: Question object>]
+	>>> [(q.id, q.question_text, q.pub_date) for q in Question.objects.all()]
+	[(1, "What's new?", datetime.datetime(2018, 6, 28, 21, 26, 12, 969473, tzinfo=<UTC>))]
+	
+	>>> q.question_text
+	"What's new?"
+	>>> q.question_text = "What's up?"
+	>>> q.save()
+	>>> [(q.id, q.question_text, q.pub_date) for q in Question.objects.all()]
+	[(1, "What's up?", datetime.datetime(2018, 6, 28, 21, 26, 12, 969473, tzinfo=<UTC>))]
+
+	>>> Question.objects.get(id=2)
+	...
+	polls.models.DoesNotExist: Question matching query does not exist.
+	>>> q = Question.objects.get(id=1)
+	>>> q.choice_set.all()
+	<QuerySet []>
+	
+	>>> q.choice_set.create(choice_text='Not much', votes=0)
+	<Choice: Choice object>
+	>>> q.choice_set.create(choice_text='The sky', votes=0)
+	<Choice: Choice object>
+	>>> c = q.choice_set.create(choice_text='Just hacking again', votes=0)
+	>>> c.question
+	<Question: Question object>
+	>>> c.question.question_text
+	"What's up?"
+	
+	>>> q.choice_set.all()
+	<QuerySet [<Choice: Choice object>, <Choice: Choice object>, <Choice: Choice object>]>
+	>>> [c.choice_text for c in q.choice_set.all()]
+	['Not much', 'The sky', 'Just hacking again']
+	>>> q.choice_set.count()
+	3
+	
+	# Choice.objects.filter(question__pub_date__year=current_year)
+	>>> Choice.objects.filter(question__pub_date__year=2018)
+	<QuerySet [<Choice: Choice object>, <Choice: Choice object>, <Choice: Choice object>]>
+	>>> c = q.choice_set.filter(choice_text__startswith='Just hacking')
+	>>> c
+	<QuerySet [<Choice: Choice object>]>
+	>>> c.delete()
+	(1, {'polls.Choice': 1})
+	>>> c
+	<QuerySet []>
