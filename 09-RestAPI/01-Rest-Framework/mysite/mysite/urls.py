@@ -20,6 +20,7 @@ from polls import views
 
 router = DefaultRouter()
 router.register(r'question', views.QuestionViewSet)
+router.register(r'choice', views.ChoiceViewSet)
 
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
