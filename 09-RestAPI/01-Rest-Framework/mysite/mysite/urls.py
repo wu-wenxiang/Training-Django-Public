@@ -19,11 +19,15 @@ from rest_framework.routers import DefaultRouter
 from polls import views
 
 router = DefaultRouter()
-router.register(r'question', views.QuestionViewSet)
-router.register(r'choice', views.ChoiceViewSet)
+router.register(r'questions', views.QuestionViewSet)
+router.register(r'choices', views.ChoiceViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+
 
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^api/', include(router.urls))
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]

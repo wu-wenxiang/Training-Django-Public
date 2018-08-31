@@ -4,9 +4,10 @@ from django.shortcuts import get_object_or_404, render, reverse
 # Create your views here.
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.views import generic
+from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from .models import Question, Choice
-from .serializers import ChoiceSerializer, QuestionSerializer
+from .serializers import ChoiceSerializer, QuestionSerializer, UserSerializer, GroupSerializer
 
 
 def index(request):
@@ -74,3 +75,11 @@ class QuestionViewSet(viewsets.ModelViewSet):
 class ChoiceViewSet(viewsets.ModelViewSet):
     queryset = Choice.objects.all()
     serializer_class = ChoiceSerializer
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+
+class GroupViewSet(viewsets.ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
