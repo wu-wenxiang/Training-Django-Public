@@ -1,0 +1,3 @@
+- [django-rest-framework quickstart](http://www.django-rest-framework.org/tutorial/quickstart/)
+- [django-rest-framework reference](https://github.com/twtrubiks/django-rest-framework-tutorial)
+- [Postman](https://www.getpostman.com/apps)
