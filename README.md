@@ -22,4 +22,5 @@
 - [Demo: Project-DjangoTest](https://github.com/wu-wenxiang/ZZLARGE-Project-DjangoTest/)
 - [Deployment: Fabric](https://github.com/wu-wenxiang/Project-Python-Webdev/tree/master/u1604-fabric)
 - [django-rest-framework](http://www.django-rest-framework.org/tutorial/quickstart/), [reference](https://github.com/twtrubiks/django-rest-framework-tutorial)
+- [django-tutorial](https://github.com/twtrubiks/django-tutorial)
 
