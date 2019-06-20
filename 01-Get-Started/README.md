@@ -1,9 +1,9 @@
 ## 安装Django
 - [选择合适的Python版本](https://www.djangoproject.com/download/)
 - pip安装Django
-	- `pip install django==1.11.13`
-	- `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11.13`
-	- `sudo pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11.13`
+	- `pip install django==1.11.21`
+	- `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11.21`
+	- `sudo pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11.21`
 - pip卸载Django
 	- `pip uninstall django`
 	- `sudo pip uninstall django`
