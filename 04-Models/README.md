@@ -1,4 +1,5 @@
 ## Migration
+
 - 在配置文件`mysite.settings`中，可以看到DB的配置
 
 		# Database
@@ -10,6 +11,7 @@
 		        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 		    }
 		}
+
 - 默认启用的App
 
 		# Application definition
@@ -22,6 +24,7 @@
 		    'django.contrib.messages',     # Message 
 		    'django.contrib.staticfiles',  # 静态文件
 		]
+
 - 上述默认启用的App有些会需要用到DB，比如Admin，因此需要产生对应的DB Table。
 	- 使用命令：`python manage.py migrate`
 	- 这个命令会遍历INSTALLED_APPS中所有App的模型对象，建立必要的Table
@@ -47,7 +50,8 @@
 		  Applying sessions.0001_initial... OK
 
 ## Add Model
-- [Add model](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/04-Models/02-Add-Model/mysite/polls/models.py)
+
+- [Add model](02-Add-Model/mysite/polls/models.py)
 	
 		# Create your models here.
 		from django.db import models
@@ -93,6 +97,7 @@
 		  Applying polls.0001_initial... OK
 
 ## 总结为App添加模型的过程
+
 1. Change your models (in models.py).
 1. 如果没有将App注册到INSTALLED_APPS，那就注册一下
 1. 运行`python manage.py makemigrations <app>`，创建一个migration版本

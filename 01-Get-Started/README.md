@@ -62,7 +62,7 @@
 
 	![Django-Welcome.png](/images/a419720ca0ad4c2582a5b5ee48e53b02-Django-Welcome.png)
 
-- 修改urls.py，添加第一个视图函数hello，[源码](https://github.com/wu-wenxiang/Training-Django-Public/tree/master/01-Get-Started/01-Hello-World)
+- 修改urls.py，添加第一个视图函数hello，[源码](01-Hello-World)
 
 	```console
 	$ git diff mysite/urls.py 
@@ -123,4 +123,4 @@
 	    └── views.py	    
 	```
 
-- 将helloworld中的hello方法移动到views.py中，[源码](https://github.com/wu-wenxiang/Training-Django-Public/tree/master/01-Get-Started/02-First-View)
+- 将helloworld中的hello方法移动到views.py中，[源码](02-First-View)

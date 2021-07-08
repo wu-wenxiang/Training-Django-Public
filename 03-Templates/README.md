@@ -24,5 +24,6 @@
 
 
 ## Steps
-1. [Add-Template](https://github.com/wu-wenxiang/Training-Django-Public/tree/master/03-Templates/01-Add-Template)
-1. [Template-Base](https://github.com/wu-wenxiang/Training-Django-Public/tree/master/03-Templates/02-Template-Base)
+
+1. [Add-Template](01-Add-Template)
+1. [Template-Base](02-Template-Base)

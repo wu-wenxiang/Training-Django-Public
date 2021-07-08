@@ -20,17 +20,17 @@
 
 ## Steps
 
-- [Step 01: Get Started](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/01-Get-Started)
-- [Step 02: Dynamic Urls](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/02-Dynamic-Urls)
-- [Step 03: Templates & Django Shell](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/03-Templates)
-- [Step 04: Models](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/04-Models)
-- [Step 05: Admins](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/05-Admins)
-- [Step 06: Forms](https://github.com/wu-wenxiang/Training-Django-Public/blob/master/06-Forms)
+- [Step 01: Get Started](01-Get-Started)
+- [Step 02: Dynamic Urls](02-Dynamic-Urls)
+- [Step 03: Templates & Django Shell](03-Templates)
+- [Step 04: Models](04-Models)
+- [Step 05: Admins](05-Admin)
+- [Step 06: Forms](06-Forms)
 
 ## Others
 
-- [Demo: Project-DjangoTest](https://github.com/wu-wenxiang/ZZLARGE-Project-DjangoTest/)
-- [Deployment: Fabric](https://github.com/wu-wenxiang/Project-Python-Webdev/tree/master/u1604-fabric)
+- Demo: Project-DjangoTest，[Github](https://github.com/wu-wenxiang/ZZLARGE-Project-DjangoTest/) 或 [Gitee](https://gitee.com/wu-wen-xiang/project-django-demo/)
+- Deployment: Fabric，[Github](https://github.com/wu-wenxiang/Project-Python-Webdev/tree/master/u1604-fabric) 或 [Gitee](https://gitee.com/wu-wen-xiang/project-python-webdev-demo/tree/master/u1604-fabric)
 - [django-rest-framework](http://www.django-rest-framework.org/tutorial/quickstart/), [reference](https://github.com/twtrubiks/django-rest-framework-tutorial)
 - [django-tutorial](https://github.com/twtrubiks/django-tutorial)
 
