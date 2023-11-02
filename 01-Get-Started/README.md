@@ -17,7 +17,7 @@
 
 	```bash
 	# Windows
-	python C:\Users\wenw\AppData\Local\Programs\Python\Python36\Scripts\django-admin.py startproject mysite
+	django-admin startproject mysite
 	# Linux/Mac
 	django-admin.py startproject mysite
 	```
